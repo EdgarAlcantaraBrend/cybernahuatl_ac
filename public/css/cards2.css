@@ -1,0 +1,151 @@
+main{
+    padding: 1%;
+    display:flex
+  }
+  .section-data{
+    
+      max-width:100px
+        display;
+  
+  }
+  
+  .cards-wrapper{
+    max-width: 100%;
+  }
+  .section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 2rem;
+  }
+  .section-description{
+    font-size: 1.3rem;
+    width: 80%;
+    line-height: 140%;
+    margin-bottom: 2rem;
+  }
+  .btn{
+    padding: .6rem 2rem;
+    font-size: 1.2rem;
+    border: 1px solid rgb(36, 34, 33);
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+  }
+  .btn:hover{
+    background-color: orangered;
+    color: rgb(0, 0, 0);
+  }
+  .cards-wrapper{
+    width: 40%;/*tamaño entre las cards*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    row-gap: 2.5rem;
+    border: none;
+  }
+  .card{
+    border: none;
+    width: 300px;
+    height: 200px;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.12);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+  }
+  .card--data, .card-img-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+    z-index: 3;
+    
+  }
+  .card--data{
+    justify-content:space-between;
+      z-index: 2;
+  }
+  
+  .card--months{
+    font-size: .9rem;
+        z-index: 2;
+  }
+  .card--title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 130%;
+        z-index: 2;
+        color: black;
+  }
+  .course-type{
+    color: orangered;
+  }
+  .card-img-wrapper img{
+    width: 100%;
+    z-index: 2;
+    
+  }
+  .card-img-deco{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    right: -50px;
+    background-color: gold;
+    transition: all ease-in-out .35s;
+  }
+  .card:hover .card-img-deco{
+    width: 450px;
+    border-radius: unset;
+    height: 300px
+    
+  }
+  .deco-2{
+    background-color: #227C9D;
+  }
+  .deco-3{
+    background-color: #17C3B2;
+  }
+  .deco-4{
+    background-color: #6d490f;
+  }
+  .deco-5{
+    background-color: #FE6D73;
+  }
+  
+  .deco-6{
+    background-color: green;
+  }
+  @media screen and (max-width: 1200px){
+    main{
+      flex-flow: column;
+    }
+    .section-data, .cards-wrapper{
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .section-data{
+      margin-bottom: 4rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+       text-align: center;
+    }
+    .cards-wrapper{
+      place-items: center;
+    }
+    
+  }
