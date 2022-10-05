@@ -8,6 +8,12 @@ use App\Http\Controllers\Letras;
 use App\Http\Controllers\Letra_a;
 use App\Http\Controllers\Grafias;
 use App\Http\Controllers\TablaSaludo;
+use App\Http\Controllers\Inicio;
+
+use App\Http\Controllers\LoginController; 
+use App\Http\Controllers\RegistroUsuariosController;
+use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +25,9 @@ use App\Http\Controllers\TablaSaludo;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//pagina principla
+Route::get('/', [App\Http\Controllers\Inicio::class, 'index'])->name('index');
+
 Route::get('/layouts.abecedario', [App\Http\Controllers\Abecedario::class, 'abecedario'])->name('abecedario');
 Route::get('/layouts.perfil', [App\Http\Controllers\Perfil::class, 'perfil'])->name('perfil');
 Route::get('/profesores', [App\Http\Controllers\Profesores::class, 'profesores'])->name('profesores');
@@ -49,3 +55,18 @@ Route::get('/grafias.letra_w', [App\Http\Controllers\Letras::class, 'letra_w'])-
 Route::get('/grafias.letra_x', [App\Http\Controllers\Letras::class, 'letra_x'])->name('grafias.letra_x');
 Route::get('/grafias.letra_y', [App\Http\Controllers\Letras::class, 'letra_y'])->name('grafias.letra_y');
 
+//--------------login-------------------------------------
+
+
+
+// Login
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'authenticate'])->name('auth.authenticate');
+
+
+// Register
+Route::get('/register', [RegistroUsuariosController::class, 'register'])->name('auth.register');
+Route::post('/register', [RegistroUsuariosController::class, 'store'])->name('auth.store');
+
+// Logout
+Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
