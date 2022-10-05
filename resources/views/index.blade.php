@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -41,15 +42,16 @@
   </a>
 </div>
 
-  
-  <div class="redes">
-    <h3>Seguinos en nuestras redes</h3>
-    <ul>
-      <li>FB</li>
-      <li>IG</li>
-      <li>TW</li>
-    </ul>
+<div class="card text-white bg-dark mb-3">
+  <div class="card-header">
+    Featured
   </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
+</div>
+
 
         
     
