@@ -41,7 +41,14 @@ main {
 } */
 
 /* -----------CON GRID------------ */
-
+body {
+	/* ESTAS MEDIDAS SON OBLIGATORIAS PARA QUE EL SITIO MIDA COMO MINIMO EL ALTO DE LA PANTALLA */
+	min-height: 100vh;
+	height: 100%;
+	display: grid;
+	/* ARMA TRES FILAS, "AUTO" SIGNIFICA QUE EL CONTENEDOR SE ADAPTA A SU CONTENIDO, "FR" SIGINIFICA QUE LLENA EL RESTO DEL ESPACIO */
+	grid-template-rows: auto 1fr auto;
+}
 
 /* ESTILO DE TODOS LOS BOTONES */
 

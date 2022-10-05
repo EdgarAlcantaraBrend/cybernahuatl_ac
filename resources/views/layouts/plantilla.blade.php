@@ -17,7 +17,13 @@
 	
 	<header>
     
-		<a ><img src="{{asset('img/logoCyber.png')}}" width="60px"  alt="" href="" ><span style="color:white;">  CyberNahualt</span></a>
+	<!-- Image and text -->
+  <nav>
+    <a class="navbar-brand" href="{{ route('index')}}">
+      <img src="{{asset('img/logoCyber.png') }}" width="50" height="50"  alt="" loading="lazy">
+      <span style="color: white;">CyberNahualt</span>
+    </a>
+  </nav>
 		<nav>
       <a href="{{ route('login')}}"><span class="btn" style="background-color:#952f57; color:white">Ingresar</span></a>
       <a href="{{ route('auth.register')}}"><span class=" btn" style="background-color: #cd0c36; color:white">Registrar</span></a>
