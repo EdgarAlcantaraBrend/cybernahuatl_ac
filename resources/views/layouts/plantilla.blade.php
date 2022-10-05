@@ -17,7 +17,7 @@
 	
 	<header>
     
-		<a ><img src="{{asset('img/logo.jpg')}}" width="60px"  alt="" href="" ><span style="color:white;">  CyberNahualt</span></a>
+		<a ><img src="{{asset('img/logoCyber.png')}}" width="60px"  alt="" href="" ><span style="color:white;">  CyberNahualt</span></a>
 		<nav>
       <a href="{{ route('login')}}"><span class="btn" style="background-color:#952f57; color:white">Ingresar</span></a>
       <a href="{{ route('auth.register')}}"><span class=" btn" style="background-color: #cd0c36; color:white">Registrar</span></a>
@@ -38,6 +38,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
-    <script src="{{ asset('js/slider.js') }}"></script>
+
   </body>
 </html>
