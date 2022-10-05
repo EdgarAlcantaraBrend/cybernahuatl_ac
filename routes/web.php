@@ -48,4 +48,3 @@ Route::get('/grafias.letra_ts', [App\Http\Controllers\Letras::class,'letra_ts'])
 Route::get('/grafias.letra_w', [App\Http\Controllers\Letras::class, 'letra_w'])->name('grafias.letra_w');
 Route::get('/grafias.letra_x', [App\Http\Controllers\Letras::class, 'letra_x'])->name('grafias.letra_x');
 Route::get('/grafias.letra_y', [App\Http\Controllers\Letras::class, 'letra_y'])->name('grafias.letra_y');
-
