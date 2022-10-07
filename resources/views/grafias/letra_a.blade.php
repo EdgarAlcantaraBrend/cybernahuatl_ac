@@ -23,10 +23,10 @@
   
   <body>
 
-    <div class="container-full">
+    <div class="container-fluid:100%">
   
       <!-- Nav -->
-      <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #1c342d"" >
+      <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #712130" >
         <div class="container margin-left-nav">
           <div class="row">
             <div class="col-md-2" style="margin-left:-20px">
@@ -37,33 +37,34 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                <a class="navbar-brand"  id="2" href="" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
+                
               </div>
             </div>
             
-            <div class="col-md-10">
+            <div class="col-sm-12" style="text-align: center">
               <div class="navbar-collapse collapse" id="navbar-main" >
   
                 <!-- Navbar botones -->
-                <ul class="nav navbar-nav horizontal mar-left">
+                <ul class="nav navbar-nav ">
                   <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
                   <li><a href="{{ route('abecedario')}}" style="text-align: center;width: 150px;color:#fff">Alfabeto</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 200px;color:#fff">Partes del cuerpo</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Numeración</a></li>
-                  <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Contacto</a></li>
+                  
                 </ul>
   
                 <!-- Navbar derecho (Registro, Login) -->
-                <ul class="nav navbar-nav navbar-right horizontal">
+                <ul class="nav navbar-nav navbar-right ">
   
                     
-                  <!-- Inicio de sesión -->
-                  <li class="dropdown" >
+                  <!-- Cerrar de sesión -->
+                  <li  >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sesion" style="color:#fff">Cerrar sesión </a>
                   </li>
                 </ul>
               </div>
             </div>
+  
   
   
           </div>
@@ -72,14 +73,14 @@
     </div>
   
   
-    <section class="container-full" >
+    <section class="container-fluid:80%" >
       
       <!-- Main page -->
       <div class="row" id="full-page" >
   
         <!-- Sidebar -->
-        <div class="col-md-2" >
-          <div class="profile-sidebar" style="background-color: #712130">
+        <div class="col-sm-2" >
+          <div class="profile-sidebar" style="background-color: #1c342d">
   
             <!-- User picture -->
             <div class="profile-userpic">
@@ -107,77 +108,79 @@
           </div>
           
         </div>
-        <br>
-        <br><br><br>
-        <div class="container" >
-            
-                
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4 text-center">
-                    <h1 style="font-family: 'Cormorant Garamond', serif;" style="margin-left: 60px;font-size: 23vmin;">
-                        GRAFÍA: A
-                    </h1>
-                </div>
-                <div class="col"></div>
-                
-            <br><br>
-            
-            <div class="header_wrap">
-              <div class="num_rows">
-              
-                      <div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
-                           <select class  ="form-control" name="state" id="maxRows">
-                               
-                               
-                               <option value="10">10</option>
-                               <option value="15">15</option>
-                               <option value="20">20</option>
-                               <option value="50">50</option>
-                               <option value="70">70</option>
-                               <option value="100">100</option>
-                  <option value="5000">Show ALL Rows</option>
-                              </select>
-                           
-                        </div>
-              </div>
-              <div class="tb_search">
-      <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control">
-              </div>
-            </div>
-            <div class="container-fluid:100%">
-                <div class="row" >
         
-                    <div class="col-sm-12 " >
-                        <div class="table-responsive" >
-                            <table class="table table-success table-striped text-center" id="table-id" style="border-radius: 20px;"> 
-                                <thead>
-                                    <tr>
-                                        <th scope="col text-center">Escritura</th>
-                                        <th scope="col text-center">Significado</th>
-                                        <th scope="col text-center">Pronunciación</th>
-                                        <th scope="col text-center">Imagen</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+          <br>
+          <br>
+          <center><h1 style="font-family: 'Cormorant Garamond', serif;" style="margin-left: 60px;font-size: 23vmin;">
+            GRAFÍA: A
+          </h1></center>
+          <div class="header_wrap">
+            
+            <div class="num_rows">
+            
+              <div class="form-group" style="margin-left: 40px"> 	<!--		Show Numbers Of Rows 		-->
+                   <select class  ="form-control" name="state" id="maxRows">
+                       
+                       
+                       <option value="10">10</option>
+                       <option value="15">15</option>
+                       <option value="20">20</option>
+                       <option value="50">50</option>
+                       <option value="70">70</option>
+                       <option value="100">100</option>
+          <option value="5000">Show ALL Rows</option>
+                      </select>
+                   
                 </div>
+          </div>
+            <div class="tb_search" style="margin-right: 300px">
+              <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control">
             </div>
             
-      <!--		Start Pagination -->
-                  <div class='pagination-container'>
-                      <nav>
-                        <ul class="pagination">
-                         <!--	Here the JS Function Will Add the Rows -->
-                        </ul>
-                      </nav>
+            
+          </div>
+          <div class="container">
+              <div class="row" >
+                  <br>
+                  <br>
+                  <div class="col-sm-11" >
+                      <div class="table-responsive" >
+                          <table class="table table-success table-striped text-center" id="table-id" style="border-radius: 20px;"> 
+                              <thead>
+                                  <tr>
+                                      <th scope="col text-center">Escritura</th>
+                                      <th scope="col text-center">Significado</th>
+                                      <th scope="col text-center">Pronunciación</th>
+                                      <th scope="col text-center">Imagen</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  
+                              </tbody>
+                          </table>
+                      </div>
                   </div>
-            <div class="rows_count" style="margin-top:-50px">Showing 11 to 20 of 91 entries</div>
-      
-      </div> <!-- 		End of Container -->
+              </div>
+          </div>
+          
+    <!--		Start Pagination -->
+                <div class='pagination-container'>
+                    <nav>
+                      <ul class="pagination">
+                       <!--	Here the JS Function Will Add the Rows -->
+                      </ul>
+                    </nav>
+                </div>
+          <div class="rows_count" style="margin-top:-50px">Showing 11 to 20 of 91 entries</div>
+    
+        </div> <!-- 		End of Container -->
+        
+        </div>
+        
+        
+            
+                
+             
       
       
       
