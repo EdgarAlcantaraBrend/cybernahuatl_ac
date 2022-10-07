@@ -41,7 +41,7 @@
               </div>
             </div>
             
-            <div class="col-md-10">
+            <div class="col-sm-12">
               <div class="navbar-collapse collapse" id="navbar-main" >
   
                 <!-- Navbar botones -->

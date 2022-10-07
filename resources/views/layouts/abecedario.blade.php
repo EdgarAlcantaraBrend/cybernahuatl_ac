@@ -52,7 +52,7 @@
                   
                 </ul>
   
-                <!-- Navbar derecho (Registro, Login) -->
+            
                 <ul class="nav navbar-nav navbar-right ">
   
                     
@@ -72,13 +72,13 @@
     </div>
   
   
-    <section class="container-full" >
+    <section class="container-fluid:100%" >
       
       <!-- Main page -->
       <div class="row" id="full-page" >
   
         <!-- Sidebar -->
-        <div class="col-md-2" >
+        <div class="col-sm-2" >
           <div class="profile-sidebar" style="background-color: #1c342d">
   
             <!-- User picture -->
@@ -107,5 +107,9 @@
           </div>
           
         </div>
-        <br><br><br>
-       @include('auxiliar.abecedario')
+        <div class="col"> @include('auxiliar.abecedario')</div>
+        
+      </div>
+      
+        
+      

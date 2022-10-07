@@ -11,7 +11,7 @@
           <div class="arrow" data-dir="1"> 
             ⟼
           </div>
-            
+          
             <div class="card card-on-left"
                  data-pos="1">
                  <a href="{{ route('grafias.letra_y')}}"> <img
