@@ -11,6 +11,7 @@
     <link href="{{asset('css/navbarInicio.css') }}" rel="stylesheet">
     <link href="{{asset('css/registro.css') }}" rel="stylesheet">
     <link href="{{asset('css/slider.css') }}" rel="stylesheet">
+
   </head>
   <body>
 
