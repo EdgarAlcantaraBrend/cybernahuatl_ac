@@ -25,7 +25,6 @@
   <body>
 
     <div class="container-full">
-  
       <!-- Nav -->
       <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #712130" >
         <div class="container margin-left-nav">
@@ -44,7 +43,6 @@
             
             <div class="col-md-10">
               <div class="navbar-collapse collapse" id="navbar-main" >
-  
                 <!-- Navbar botones -->
                 <ul class="nav navbar-nav horizontal mar-left">
                   <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
@@ -84,7 +82,7 @@
   
             <!-- User picture -->
             <div class="profile-userpic">
-              <img src="{{asset('img/logo_2_2.png')}}" class="img-responsive img-circle border" alt="foto">
+              <img src="{{asset('img/logoCyber.png')}}" class="img-responsive img-circle border" alt="foto">
             </div>
   
             

@@ -83,7 +83,7 @@
   
             <!-- User picture -->
             <div class="profile-userpic">
-              <img src="{{asset('img/logo_2_2.png')}}" class="img-responsive img-circle border" alt="foto">
+              <img src="{{asset('img/logoCyber.png')}}" class="img-responsive img-circle border" alt="foto">
             </div>
   
            

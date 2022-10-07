@@ -37,28 +37,28 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                <a class="navbar-brand"  id="2" href="" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
+               
               </div>
             </div>
             
-            <div class="col-md-10">
+            <div class="col-sm-12" style="text-align: center">
               <div class="navbar-collapse collapse" id="navbar-main" >
   
                 <!-- Navbar botones -->
-                <ul class="nav navbar-nav horizontal mar-left">
+                <ul class="nav navbar-nav ">
                   <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
                   <li><a href="{{ route('abecedario')}}" style="text-align: center;width: 150px;color:#fff">Alfabeto</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 200px;color:#fff">Partes del cuerpo</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Numeración</a></li>
-                  <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Contacto</a></li>
+                  
                 </ul>
   
                 <!-- Navbar derecho (Registro, Login) -->
-                <ul class="nav navbar-nav navbar-right horizontal">
+                <ul class="nav navbar-nav navbar-right ">
   
                     
-                  <!-- Inicio de sesión -->
-                  <li class="dropdown" >
+                  <!-- Cerrar de sesión -->
+                  <li  >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sesion" style="color:#fff">Cerrar sesión </a>
                   </li>
                 </ul>
@@ -70,8 +70,8 @@
         </div>
       </nav>
     </div>
-  
-  
+    
+    
     <section class="container-full" >
       
       <!-- Main page -->
@@ -83,7 +83,7 @@
   
             <!-- User picture -->
             <div class="profile-userpic">
-              <img src="{{asset('img/logo_2_2.png')}}" class="img-responsive img-circle border" alt="foto">
+              <img src="{{asset('img/logoCyber.png')}}" class="img-responsive img-circle border" alt="foto">
             </div>
   
             
