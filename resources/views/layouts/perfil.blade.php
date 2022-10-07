@@ -110,7 +110,7 @@
    
 
  
-    <body>
+   
       <br><br><br>
       <div class="cont">
         <br><br><br>
@@ -122,4 +122,5 @@
           <p style="margin-right: 150px;"><a href="http://www.facebook.com" target="_blank"></a></p>
         </div>
     
-</html>
+  </html>
+<body>

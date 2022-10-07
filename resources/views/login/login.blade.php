@@ -28,7 +28,7 @@
         <h1 class="showcase-text">
          Cursos en Nahualt gratuitamente
         </h1>
-        <a href="#" class="secondary-btn">Create una cuenta :) </a>
+        <a href="{{route('auth.register') }}" class="secondary-btn">Create una cuenta :) </a>
       </div>
     </div>
   </div>

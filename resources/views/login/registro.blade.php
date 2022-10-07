@@ -93,11 +93,9 @@
             <div class="row">
                 <div class="col" style="margin-top: 16px">
                     <a class="nav-link"
-                        href="">
-                        <span class="button rojo" style="text-align: center" data-toggle="modal" href="">
-                            Cancelar
-                        </span>
-                        </a>
+                        href="{{ route('index')}}">
+                        <span class="button rojo" style="text-align: center" data-toggle="modal" href="">Cancelar</span>
+                    </a>
                 </div>
                 <div class="col" style="margin-top: 5px">
                     <button type="submit" class="button azul" style="text-align: center">
