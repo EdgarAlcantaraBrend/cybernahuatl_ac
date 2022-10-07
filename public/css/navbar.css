@@ -1,26 +1,20 @@
-body {
-	font-family: sans-serif;
-	background-color: rgb(239, 244, 246);
-}
+
 
 .navbar {
 	margin-bottom: 0 !important;
 }
 
 .mar-left {
-	margin-left: 80px !important;
+	margin-left: 10% !important;
 }
 
 ul.navbar-right {
 	/*margin-right: -15.45vw !important;*/
-	margin-right: -22.5vw !important;
+	margin-right: -5.5vw !important;
   
 }
 
-.navbar-nav>li>a {
-	padding-left: 30px;
-	padding-right:20px;
-}
+
 
 .row {/*Tamaño de barra izquierda (anchura)*/
 	margin-left: -15px !important;
@@ -87,7 +81,7 @@ ul.horizontal li:last-child {
 
 .profile-sidebar {
 	background-color: rgb(35, 35, 35);
-	height: 92.5vh;
+	height: 104.5vh;
 	border-right: 1px solid black;
 	margin-top: 0 !important;
 }

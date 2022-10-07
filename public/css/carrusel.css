@@ -19,17 +19,18 @@ h1{
 .carousel{
   position: relative;
   height: 75vh;
-  width: 110%;
+  width: 96%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /*F lechas */
 .arrow{
   position: absolute;
   top: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
   right: 7.5vw;
   cursor: pointer;/*Mano que indica que toque el usuario*/
   width: 5.5rem;
@@ -43,18 +44,19 @@ h1{
 }
 
 .arrow:first-child{
-  left: 7.5vw;
+  left:4vw;
 }
 
 .arrow:hover{
   color: rgb(0, 0, 0);
   background: #1c342d;
+  
 }
 
 .card{
   position: absolute;
   height: 50vmin;
-  width: 62vmin;
+  width: 55vmin;
   transform-origin: bottom;
   transition: transform 1s ease-in-out;
   border: 1vmin solid black;
