@@ -208,7 +208,7 @@
                 ></a>
             <p class="name">
               <a href="{{ route('grafias.letra_i')}}">
-                Grafia H
+                Grafia I
               </a>
             </p>
           </div>
@@ -221,7 +221,7 @@
                 ></a>
             <p class="name">
               <a href="{{ route('grafias.letra_h')}}">
-                Grafia I
+                Grafia H
               </a>
             </p>
           </div>
