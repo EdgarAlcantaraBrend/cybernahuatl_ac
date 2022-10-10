@@ -3,12 +3,13 @@
     <div class="container">
 
         <h1 style="margin-left: 40px;text-align: center">ALFABETO NAHUATL </h1>
-        <div class="carousel">
+        <br><br>
+        <div class="carousel" data-ride="carousel" class="carousel slide">
           
           <div class="arrow" data-dir="-1"> 
             ⟻
           </div>
-          <div class="arrow" data-dir="1"> 
+          <div class="arrow" data-dir="1" style="margin-right: 100px"> 
             ⟼
           </div>
           
@@ -200,19 +201,6 @@
           </div>
           <div class="card card-on-left"
                 data-pos="15">
-                <a href="{{ route('grafias.letra_h')}}"> <img
-                src="{{asset('img/letra_h.png')}}"
-                alt="fill Murray"
-                class="illustration"
-                ></a>
-            <p class="name">
-              <a href="{{ route('grafias.letra_h')}}">
-                Grafia H
-              </a>
-            </p>
-          </div>
-          <div class="card card-on-right"
-                data-pos="16">
                 <a href="{{ route('grafias.letra_i')}}"> <img
                 src="{{asset('img/letra_i.png')}}"
                 alt="fill Murray"
@@ -220,6 +208,19 @@
                 ></a>
             <p class="name">
               <a href="{{ route('grafias.letra_i')}}">
+                Grafia H
+              </a>
+            </p>
+          </div>
+          <div class="card card-on-right"
+                data-pos="16">
+                <a href="{{ route('grafias.letra_h')}}"> <img
+                src="{{asset('img/letra_h.png')}}"
+                alt="fill Murray"
+                class="illustration"
+                ></a>
+            <p class="name">
+              <a href="{{ route('grafias.letra_h')}}">
                 Grafia I
               </a>
             </p>

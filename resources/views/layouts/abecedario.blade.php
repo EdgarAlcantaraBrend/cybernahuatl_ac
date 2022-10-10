@@ -107,6 +107,8 @@
           </div>
           
         </div>
+        
+
         <div class="col"> @include('auxiliar.abecedario')</div>
         
       </div>

@@ -21,7 +21,7 @@ h1{
   height: 60vh;
   width: 96%;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
   
 }
@@ -29,12 +29,12 @@ h1{
 /*F lechas */
 .arrow{
   position: absolute;
-  top: 50%;
+  top: 40%;/*Posicion hacia arriba o hacia abajo*/
   font-size: 3rem;
-  right: 7.5vw;
+  right:40px;/*Flecha derecha*/
   cursor: pointer;/*Mano que indica que toque el usuario*/
-  width: 5.5rem;
-  aspect-ratio: 1/.9;
+  width: 4.5rem;/*Tañamo de circulo*/
+  aspect-ratio: 1/.9;/*Circulo de la flecha*/
   display:grid;
   place-content: center;
   border-radius: 50%;
@@ -44,7 +44,8 @@ h1{
 }
 
 .arrow:first-child{
-  left:4vw;
+  left:15vw;
+  
 }
 
 .arrow:hover{
@@ -55,8 +56,8 @@ h1{
 
 .card{
   position: absolute;
-  height: 50vmin;
-  width: 55vmin;
+  height: 40vmin;
+  width: 35vmin;
   transform-origin: bottom;
   transition: transform 1s ease-in-out;
   border: 1vmin solid black;
@@ -271,10 +272,10 @@ h1{
 
 /*Imagen dentro de la card*/
 .illustration{
-  width: 55%;
+  width: 65%;
   height: 70%;
   transition: transform .25s ease-in-out;
-  margin-left: 90px;
+  margin-left: 30px;
 }
 
  /*Nombre de la grafia*/
