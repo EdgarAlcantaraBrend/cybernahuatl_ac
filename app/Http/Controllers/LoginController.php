@@ -18,21 +18,22 @@ class LoginController extends Controller
     public function login(){
         return view('/login.login');
     }
-    public function authenticate(){
+    public function authenticate(Request $request){
 
+<<<<<<< Updated upstream
         if(auth()->attempt(request(['correo','password']))){
+=======
+        if((auth()->attempt(request(['usu_correo','usu_password'])))){
+>>>>>>> Stashed changes
             return redirect()->to('/');
             // return back()->withErrors([
             //     'message'=>'The email or password is incorrect, please try again'
             // ]);
+        }else{
+            print("mal");
         }
         return redirect()->to('/welcome');
 
     }
-    public function logout (Request $request) {
-        $token = $request->user()->token();
-        $token->revoke();
-        $response = ['message' => 'You have been successfully logged out!'];
-        return response($response, 200);
-    }
+    
 }

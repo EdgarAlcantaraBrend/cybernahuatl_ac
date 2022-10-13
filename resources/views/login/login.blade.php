@@ -9,11 +9,11 @@
         @csrf
         <div>
           <label>Email</label>
-          <input type="text" name="email" id="email" class="text-input" >
+          <input type="email" name="email" id="email" class="text-input"  required  placeholder="name@example.com" autocomplete="off">
         </div>
         <div>
           <label>Password</label>
-          <input type="password" name="password" id="password"  class="text-input" >
+          <input type="password" name="password" id="password"  class="text-input" required placeholder="password" >
         </div>
         <button type="submit" class="primary-btn">Iniciar Sesion</button>
       </form>
