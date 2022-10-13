@@ -17,14 +17,14 @@
 	<title>Inicio</title>
   
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cursos.css') }}">
-    
+    <link rel="stylesheet" href="{{ asset('css/perfil.css') }}">
     <title>Inicio</title>
   </head>
   
   <body>
 
     <div class="container-full">
+  
       <!-- Nav -->
       <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #712130" >
         <div class="container margin-left-nav">
@@ -37,12 +37,13 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                <a class="navbar-brand"  id="2" href="{{ route('welcome')}}" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
+                <a class="navbar-brand"  id="2" href="" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
               </div>
             </div>
             
             <div class="col-md-10">
               <div class="navbar-collapse collapse" id="navbar-main" >
+  
                 <!-- Navbar botones -->
                 <ul class="nav navbar-nav horizontal mar-left">
                   <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
@@ -78,33 +79,48 @@
   
         <!-- Sidebar -->
         <div class="col-md-2" >
-          <div class="profile-sidebar" style="background-color: #1c342d">
+          <div class="profile-sidebar" style="background-color: #1c342d"">
   
             <!-- User picture -->
             <div class="profile-userpic">
               <img src="{{asset('img/logoCyber.png')}}" class="img-responsive img-circle border" alt="foto">
             </div>
   
-            
+           
             <!-- Sidebar menu -->
             <nav class="profile-menu" >
               <ul class="nav navbar vertical">
                 <li>
-                  <a href="{{ route('perfil')}}" style="color:#fff"><i class="glyphicon glyphicon-user" style="color:#fff"></i> Perfil</a>
+                  <a href="{{ route('perfil')}}" style="color: #fff"><i class="glyphicon glyphicon-user" style="color: #fff"></i> Perfil</a>
                 </li>
                 <li>
-                  <a href="{{ route('cursos')}}"" style="color:#fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color:#fff"></i>Cursos</a>
+                  <a href="{{ route('cursos')}}" style="color: #fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color: #fff"></i>Cursos</a>
                 </li>
                 <li>
-                  <a href="#" style="color:#fff"><i class="glyphicon glyphicon-star" style="color:#fff"></i> Profesores</a>
+                  <a href="#" style="color: #fff"><i class="glyphicon glyphicon-star" style="color: #fff"></i>Profesores</a>
                 </li>
                 <li>
-                  <a href="#" style="color:#fff"><i class="glyphicon glyphicon-flag" style="color:#fff"></i> Ayuda</a>
+                  <a href="#" style="color: #fff"><i class="glyphicon glyphicon-flag" style="color: #fff"></i> Ayuda</a>
                 </li>
               </ul>
             </nav>
           </div>
-          
         </div>
+    <!-- Bootstrap CSS -->
+   
+
+ 
+   
+      <br><br><br>
+      <div class="cont">
         <br><br><br>
-       @include('auxiliar.cursos2')
+        <div><img class="img-perfil" src="https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg"/></div>
+          <p></p>
+          <h1 style="margin-right: 150px;color:black">Perfil de usuario</h1>
+          <h2 style="margin-right: 150px;color:black">Profesion</h2>
+          <p style="margin-right: 150px;"><a href="mailto:">example@domain.com</a></p>
+          <p style="margin-right: 150px;"><a href="http://www.facebook.com" target="_blank"></a></p>
+        </div>
+    
+  </html>
+<body>

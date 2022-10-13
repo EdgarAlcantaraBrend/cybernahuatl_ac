@@ -17,7 +17,6 @@
 	<title>Inicio</title>
   
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cursos.css') }}">
     
     <title>Inicio</title>
   </head>
@@ -25,6 +24,7 @@
   <body>
 
     <div class="container-full">
+  
       <!-- Nav -->
       <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #712130" >
         <div class="container margin-left-nav">
@@ -37,15 +37,16 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                <a class="navbar-brand"  id="2" href="{{ route('welcome')}}" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
+                <a class="navbar-brand"  id="2" href="" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
               </div>
             </div>
             
-            <div class="col-md-10">
+            <div class="col-sm-12">
               <div class="navbar-collapse collapse" id="navbar-main" >
+  
                 <!-- Navbar botones -->
                 <ul class="nav navbar-nav horizontal mar-left">
-                  <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
+                  <li><a href="#" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
                   <li><a href="{{ route('abecedario')}}" style="text-align: center;width: 150px;color:#fff">Alfabeto</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 200px;color:#fff">Partes del cuerpo</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Numeración</a></li>
@@ -78,7 +79,7 @@
   
         <!-- Sidebar -->
         <div class="col-md-2" >
-          <div class="profile-sidebar" style="background-color: #1c342d">
+          <div class="profile-sidebar" style="background-color: #712130">
   
             <!-- User picture -->
             <div class="profile-userpic">
@@ -93,7 +94,7 @@
                   <a href="{{ route('perfil')}}" style="color:#fff"><i class="glyphicon glyphicon-user" style="color:#fff"></i> Perfil</a>
                 </li>
                 <li>
-                  <a href="{{ route('cursos')}}"" style="color:#fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color:#fff"></i>Cursos</a>
+                  <a href="{{ route('cursos')}}" style="color:#fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color:#fff"></i>Cursos</a>
                 </li>
                 <li>
                   <a href="#" style="color:#fff"><i class="glyphicon glyphicon-star" style="color:#fff"></i> Profesores</a>
@@ -106,5 +107,4 @@
           </div>
           
         </div>
-        <br><br><br>
-       @include('auxiliar.cursos2')
+       

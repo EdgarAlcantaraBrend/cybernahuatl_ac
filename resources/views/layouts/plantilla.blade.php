@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <link href="{{asset('css/navbarInicio.css') }}" rel="stylesheet">
     <link href="{{asset('css/registro.css') }}" rel="stylesheet">
     <link href="{{asset('css/slider.css') }}" rel="stylesheet">
@@ -28,12 +25,13 @@
   <nav>
     <a class="navbar-brand" href="{{ route('index')}}">
       <img src="{{asset('img/logoCyber.png') }}" width="50" height="50"  alt="" loading="lazy">
-      <span style="color: white; font-family: 'Alata', sans-serif;">CyberNahualt</span>
+      <span style="color: white;">CyberNahualt</span>
     </a>
   </nav>
 		<nav>
-      <a href="{{ route('login')}}"><span class="btn" style="background-color:#952f57; color:white; font-family: 'Alata', sans-serif;" >Ingresar</span></a>
-      <a href="{{ route('auth.register')}}"><span class=" btn" style="background-color: #cd0c36; color:white; font-family: 'Alata', sans-serif;">Registrar</span></a>
+      <a href="{{ route('login')}}"><span class="btn" style="background-color:#952f57; color:white">Ingresar</span></a>
+      <a href="{{ route('auth.register')}}"><span class=" btn" style="background-color: #cd0c36; color:white">Registrar</span></a>
+
 		</nav>
 	</header>
   

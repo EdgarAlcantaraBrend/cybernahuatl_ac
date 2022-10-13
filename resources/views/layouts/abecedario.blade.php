@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,14 +16,14 @@
 	<title>Inicio</title>
   
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cursos.css') }}">
-    
+    <link rel="stylesheet" href="{{ asset('css/carrusel.css') }}">
     <title>Inicio</title>
   </head>
   
   <body>
 
     <div class="container-full">
+  
       <!-- Nav -->
       <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #712130" >
         <div class="container margin-left-nav">
@@ -37,32 +36,34 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                <a class="navbar-brand"  id="2" href="{{ route('welcome')}}" style="color: #fff;margin-left: 50px">CYBERNAHUATL</a>
+                
               </div>
             </div>
             
-            <div class="col-md-10">
+            <div class="col-sm-12" style="text-align: center">
               <div class="navbar-collapse collapse" id="navbar-main" >
+  
                 <!-- Navbar botones -->
-                <ul class="nav navbar-nav horizontal mar-left">
+                <ul class="nav navbar-nav ">
                   <li><a href="{{ route('welcome')}}" style="text-align: center;width: 150px;color:#fff">Inicio</a></li>
                   <li><a href="{{ route('abecedario')}}" style="text-align: center;width: 150px;color:#fff">Alfabeto</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 200px;color:#fff">Partes del cuerpo</a></li>
                   <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Numeración</a></li>
-                  <li><a href="contacto.html" style="text-align: center;width: 150px;color:#fff">Contacto</a></li>
+                  
                 </ul>
   
-                <!-- Navbar derecho (Registro, Login) -->
-                <ul class="nav navbar-nav navbar-right horizontal">
+            
+                <ul class="nav navbar-nav navbar-right ">
   
                     
-                  <!-- Inicio de sesión -->
-                  <li class="dropdown" >
+                  <!-- Cerrar de sesión -->
+                  <li  >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sesion" style="color:#fff">Cerrar sesión </a>
                   </li>
                 </ul>
               </div>
             </div>
+  
   
   
           </div>
@@ -71,13 +72,13 @@
     </div>
   
   
-    <section class="container-full" >
+    <section class="container-fluid:100%" >
       
       <!-- Main page -->
       <div class="row" id="full-page" >
   
         <!-- Sidebar -->
-        <div class="col-md-2" >
+        <div class="col-sm-2" >
           <div class="profile-sidebar" style="background-color: #1c342d">
   
             <!-- User picture -->
@@ -90,21 +91,27 @@
             <nav class="profile-menu" >
               <ul class="nav navbar vertical">
                 <li>
-                  <a href="{{ route('perfil')}}" style="color:#fff"><i class="glyphicon glyphicon-user" style="color:#fff"></i> Perfil</a>
+                  <a href="{{ route('perfil')}}" style="color: #fff"><i class="glyphicon glyphicon-user" style="color: #fff"></i> Perfil</a>
                 </li>
                 <li>
-                  <a href="{{ route('cursos')}}"" style="color:#fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color:#fff"></i>Cursos</a>
+                  <a href="{{ route('cursos')}}" style="color: #fff"><i class=" fas fa fa-regular fa-graduation-cap" style="color: #fff"></i>Cursos</a>
                 </li>
                 <li>
-                  <a href="#" style="color:#fff"><i class="glyphicon glyphicon-star" style="color:#fff"></i> Profesores</a>
+                  <a href="#" style="color: #fff"><i class="glyphicon glyphicon-star" style="color: #fff"></i> Profesores</a>
                 </li>
                 <li>
-                  <a href="#" style="color:#fff"><i class="glyphicon glyphicon-flag" style="color:#fff"></i> Ayuda</a>
+                  <a href="#" style="color: #fff"><i class="glyphicon glyphicon-flag" style="color: #fff"></i> Ayuda</a>
                 </li>
               </ul>
             </nav>
           </div>
           
         </div>
-        <br><br><br>
-       @include('auxiliar.cursos2')
+        
+
+        <div class="col"> @include('auxiliar.abecedario')</div>
+        
+      </div>
+      
+        
+      
