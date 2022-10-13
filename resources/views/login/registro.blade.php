@@ -7,13 +7,14 @@
         <form action="{{ route('auth.store') }}" method="POST">
             @csrf
             
+
             <div class="row mb-3">
-                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nombre: ') }}</label>
+                <label for="apellidos" class="col-md-4 col-form-label text-md-end">{{ __('Apellidos') }}</label>
 
                 <div class="col-md-6">
-                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <input id="apellidos" type="text" class="form-control @error('apellidos') is-invalid @enderror" name="apellidos" value="{{ old('apellidos') }}" required autocomplete="apellidos" autofocus>
 
-                    @error('name')
+                    @error('apellidos')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -22,12 +23,12 @@
             </div>
 
             <div class="row mb-3">
-                <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo Electronico: ') }}</label>
+                <label for="usuario" class="col-md-4 col-form-label text-md-end">{{ __('Usuario: ') }}</label>
 
                 <div class="col-md-6">
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                    <input id="usuario" type="text" class="form-control @error('usuario') is-invalid @enderror" name="usuario" value="{{ old('usuario') }}" required autocomplete="usuario" autofocus>
 
-                    @error('email')
+                    @error('usuario')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -49,6 +50,20 @@
                 </div>
             </div>
 
+            <div class="row mb-3">
+                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nombre: ') }}</label>
+
+                <div class="col-md-6">
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            </div>
+
 
 
             
@@ -57,6 +72,20 @@
 
                 <div class="col-md-6">
                     <input id="password_confirm" type="password" class="form-control" name="password_confirm" required autocomplete="new-password">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo Electronico: ') }}</label>
+
+                <div class="col-md-6">
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
             </div>
 

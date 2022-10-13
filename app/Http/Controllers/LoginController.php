@@ -20,7 +20,7 @@ class LoginController extends Controller
     }
     public function authenticate(){
 
-        if(auth()->attempt(request(['correo','password']))){
+        if(auth()->attempt(request(['usu_correo','usu_password']))){
             return redirect()->to('/');
             // return back()->withErrors([
             //     'message'=>'The email or password is incorrect, please try again'
