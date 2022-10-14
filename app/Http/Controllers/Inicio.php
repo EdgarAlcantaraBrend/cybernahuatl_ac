@@ -19,4 +19,11 @@ class Inicio extends Controller
   public function abecedario(){
     return view('abecedario');  
   }
+  public function diccionario(){
+    return view('diccionario');  
+  }
+  public function cursos(){
+    return view('cursos');  
+  }
+  
 }

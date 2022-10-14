@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Inicio;
-
+use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\LoginController; 
 use App\Http\Controllers\RegistroUsuariosController;
 use App\Http\Controllers\AuthController;
@@ -22,8 +22,10 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [App\Http\Controllers\Inicio::class, 'index'])->name('index');
 //dentro del sistema
 Route::get('/welcome', [App\Http\Controllers\Inicio::class, 'welcome'])->name('welcome');
-
 Route::get('/abecedario', [App\Http\Controllers\Inicio::class, 'abecedario'])->name('abecedario');
+Route::get('/diccionario', [App\Http\Controllers\Inicio::class, 'diccionario'])->name('diccionario');
+Route::get('/cursos', [App\Http\Controllers\Inicio::class, 'cursos'])->name('cursos');
+Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
 
 Route::get('/grafias.letra_a', [App\Http\Controllers\Letras::class, 'letra_a'])->name('grafias.letra_a');
 Route::get('/grafias.letra_ch', [App\Http\Controllers\Letras::class, 'letra_ch'])->name('grafias.letra_ch');
