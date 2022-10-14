@@ -9,17 +9,16 @@ use HasApiTokens, Notifiable;
 class Usuarios extends Model
 {
     //el nombre de la tabla 
-    protected $table='usuarios';
+    protected $table='t_usuarios';
     public $timestamps=false;
 
     protected $fillable = [
 
-        '$paciente->usu_apellido',
-        '$paciente->usu_usuario',
-        '$paciente->usu_password',
-        '$paciente->usu_nombres',
-        '$paciente->usu_confirm_password',
-        '$paciente->usu_correo'
+        '$registroUsuario->nombre',
+        '$registroUsuario->correo',
+        '$registroUsuario->password',
+        '$registroUsuario->confirm_password'
+
        
     ];
 }

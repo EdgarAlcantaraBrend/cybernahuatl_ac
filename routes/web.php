@@ -1,13 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AlfabetoController;
-use App\Http\Controllers\QuienesSomos;
-use App\Http\Controllers\Profesores;
-use App\Http\Controllers\Letras;
-use App\Http\Controllers\Letra_a;
-use App\Http\Controllers\Grafias;
-use App\Http\Controllers\TablaSaludo;
 use App\Http\Controllers\Inicio;
 
 use App\Http\Controllers\LoginController; 
@@ -27,13 +20,10 @@ use Illuminate\Support\Facades\Auth;
 
 //pagina principla
 Route::get('/', [App\Http\Controllers\Inicio::class, 'index'])->name('index');
-
-Route::get('/layouts.abecedario', [App\Http\Controllers\Abecedario::class, 'abecedario'])->name('abecedario');
-Route::get('/layouts.perfil', [App\Http\Controllers\Perfil::class, 'perfil'])->name('perfil');
-Route::get('/profesores', [App\Http\Controllers\Profesores::class, 'profesores'])->name('profesores');
+//dentro del sistema
 Route::get('/welcome', [App\Http\Controllers\Inicio::class, 'welcome'])->name('welcome');
-Route::get('/quienesSomos', [App\Http\Controllers\QuienesSomos::class, 'quienesSomos'])->name('quienesSomos');
-Route::get('/cursos', [App\Http\Controllers\Cursos::class, 'cursos'])->name('cursos');
+
+Route::get('/abecedario', [App\Http\Controllers\Inicio::class, 'abecedario'])->name('abecedario');
 
 Route::get('/grafias.letra_a', [App\Http\Controllers\Letras::class, 'letra_a'])->name('grafias.letra_a');
 Route::get('/grafias.letra_ch', [App\Http\Controllers\Letras::class, 'letra_ch'])->name('grafias.letra_ch');
