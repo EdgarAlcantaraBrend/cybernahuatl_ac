@@ -1,7 +1,5 @@
 body {
-  padding-bottom: 30px;
-  position: relative;
-  min-height: 100%;
+ 
   font-family: 'Alata', sans-serif;
 }
 
@@ -240,3 +238,4 @@ a:focus {
     margin-right: 250px;
   }
 }
+
