@@ -25,5 +25,8 @@ class Inicio extends Controller
   public function cursos(){
     return view('cursos');  
   }
+  public function profesores(){
+    return view('profesores');  
+  }
   
 }

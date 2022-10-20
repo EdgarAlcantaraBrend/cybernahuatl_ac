@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="{{asset('css/navbarSistema.css') }}" rel="stylesheet">
+    <link href="{{asset('librerias/fontawesome/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="librerias/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <link href="{{asset('css/curso.css') }}" rel="stylesheet">
     <link href="{{asset('css/perfil.css') }}" rel="stylesheet">
+    <link href="{{asset('css/profesores.css') }}" rel="stylesheet">
   </head>
   <body>
     
@@ -31,21 +33,25 @@
             <a href="#"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="{{ route('cursos')}}"><i class="fa fa-plug"></i>Cursos</a>
+            <a href="{{ route('cursos')}}"><i class="fa fa-university" aria-hidden="true"></i>Cursos</a>
           </li>
           <li>
-            <a href="{{ route('diccionario')}}"><i class="fa fa-user"></i>Diccionario</a>
+            <a href="{{ route('diccionario')}}"><i class="fa fa-outdent"></i>Diccionario</a>
           </li>
+          <hr>
           <li>
             <a href="{{ route('perfil')}}"><i class="fa fa-user"></i>Perfil</a>
+          </li>
+          <li>
+            <a href="{{ route('profesores')}}"><i class="fa fa-users" aria-hidden="true"></i>Profesores</a>
           </li>
         </ul>
       </aside>
     
       <div id="navbar-wrapper">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse  ">
           <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header  ">
               <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
               <a href="{{ route('abecedario')}}">Alfabeto</a>
               <a href="">Numeraciòn</a>
@@ -78,5 +84,6 @@
     <script src="{{ asset('js/navbarSistema.js') }}"></script>
     <script src="{{ asset('js/carrucelAlfabeto.js') }}"></script>
     <script src="{{ asset('js/diccionario.js') }}"></script>
+    <script src="{{ asset('js/perfil.js') }}"></script>
   </body>
 </html>

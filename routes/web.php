@@ -25,7 +25,11 @@ Route::get('/welcome', [App\Http\Controllers\Inicio::class, 'welcome'])->name('w
 Route::get('/abecedario', [App\Http\Controllers\Inicio::class, 'abecedario'])->name('abecedario');
 Route::get('/diccionario', [App\Http\Controllers\Inicio::class, 'diccionario'])->name('diccionario');
 Route::get('/cursos', [App\Http\Controllers\Inicio::class, 'cursos'])->name('cursos');
-Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
+Route::get('/profesores', [App\Http\Controllers\Inicio::class, 'profesores'])->name('profesores');
+
+Route::get('/perfil' , [App\Http\Controllers\PerfilController::class, 'show'])->name('perfil');
+//Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
+
 
 Route::get('/grafias.letra_a', [App\Http\Controllers\Letras::class, 'letra_a'])->name('grafias.letra_a');
 Route::get('/grafias.letra_ch', [App\Http\Controllers\Letras::class, 'letra_ch'])->name('grafias.letra_ch');
@@ -55,6 +59,8 @@ Route::get('/grafias.letra_y', [App\Http\Controllers\Letras::class, 'letra_y'])-
 // Login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('auth.authenticate');
+
+
 
 
 // Register

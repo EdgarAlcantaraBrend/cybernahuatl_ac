@@ -2,22 +2,29 @@
 
 @section('content')
 
-<div class="container">
-      <div class="left box-primary">
-        <img class="image" src="https://yt3.ggpht.com/-Y4ybONkbdYA/AAAAAAAAAAI/AAAAAAAAAAA/SCMi3HFru2w/s100-c-k-no-rj-c0xffffff/photo.jpg" alt="" />
-        <br><br><br>
-        <h5 class="username text-center">Nombre del usuario</h5>
-        <h5 class="username text-center">Correo electronico</h5>
-        <br><br><br>
-        
-        <a href="#" class="btn btn-block"><b>Editar foto</b></a>
-      </div>
+  
+<header class="cabezera">
+  <div class="perfil">
+    <img class="perfil-foto" src="{{asset('img/nopal.jpg')}}"/>
+  </div>
 
-      <div class="right tab-content">
-        <div class="jumbotron">
-          <h5 class="display-4">Estadisticas del curso</h5>
-        </div>
-      </div>
-    </div>
-  </main>
+
+  <div class="titulo">
+   <h3>Nombre de usuario</h3>
+    <h3>Correo del usuario</h3>
+  </div>
+
+
+  <div class="col"></div>
+  <div class="tema">
+    <button onclick="mudaTema()">Alterar Tema</button>
+  </div>
+</header>
+
+
+<main class="jumpotron">
+  <ul class="jumpotron-titulo">Calificaciones de los cursos en Nahualt:</ul>
+
+</main>
+</div>
 @endsection
