@@ -1,129 +1,91 @@
 @extends('layouts.plantilla2')
 
 @section('content')
-<div class="container">
-  
-  <h1> Place holders </h1>
-  
-  <div class="carousel">
+ 
+<section >
+   
+        <header>
+            <button type="button" class="load">!Has click aqui!</button>
+          </header>
+          <ul class="deck preload" >
+            <div class="row">
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content"><img src="{{asset('img/grafias/letra_a.png')}}" alt=""></div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">2</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">3</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">4</div>
+                  </li></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> <li class="card" style="width: 300px">
+                    <div class="content">5</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">6</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">7</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">8</div>
+                  </li></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> <li class="card" style="width: 300px">
+                    <div class="content">9</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">10</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">11</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">12</div>
+                  </li></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> <li class="card" style="width: 300px">
+                    <div class="content">13</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">14</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">15</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">16</div>
+                  </li></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> <li class="card" style="width: 300px">
+                    <div class="content">17</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">18</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">19</div>
+                  </li></div>
+                <div class="col-sm-3"><li class="card" style="width: 300px">
+                    <div class="content">20</div>
+                  </li></div>
+            </div>
+           
+            
+            
+            
+            
+          </ul>
     
-    <div class="arrow" data-dir="-1"> 
-      ⟻
-    </div>
-    <div class="arrow" data-dir="1"> 
-      ⟼
-    </div>
-    
-      <div class="card card-on-left"
-           data-pos="1">
-        <img
-             src="https://picsum.photos/400"
-             alt="Lorem Picsum"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://picsum.photos">
-            Lorem Picsum
-          </a>
-        </p>
-      </div>
-      <div class="card card-on-right"
-           data-pos="2">
-        <img
-             src="https://via.placeholder.com/400"
-             alt="place holder"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://via.placeholder.com">
-            place holder
-          </a>
-        </p>
-      </div>
-      <div class="card card-on-left"
-           data-pos="3">
-        <img
-             src="https://www.placecage.com/400/400"
-             alt="place Cage"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://www.placecage.com">
-            place Cage
-          </a>
-        </p>
-      </div>
-      <div class="card card-on-right"
-           data-pos="4">
-        <img
-             src="https://placekitten.com/400/400"
-             alt="place Kitten"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://placekitten.com">
-            Place Kitten
-          </a>
-        </p>
-      </div>
-      <div class="card card-on-left"
-           data-pos="5">
-        <img
-             src="https://baconmockup.com/400/400"
-             alt="baconmockup"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://baconmockup.com">
-            baconmockup
-          </a>
-        </p>
-      </div>
-            <div class="card card-on-right"
-                 data-pos="6">
-        <img
-             src="https://placebeard.it/400x400"
-             alt="place beard"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://placebeard.it">
-            place beard
-          </a>
-        </p>
-      </div>
-            <div class="card card-on-left"
-             data-pos="7">
-        <img
-             src="http://placeimg.com/400/400/arch/grayscale"
-             alt="place img"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="http://placeimg.com">
-            Place img
-          </a>
-        </p>
-      </div>
-            <div class="card card-on-right"
-             data-pos="8">
-              <img
-             src="https://www.fillmurray.com/400/400"
-             alt="fill Murray"
-             class="illustration"
-             >
-        <p class="name">
-          <a href="https://www.fillmurray.com">
-            fill Murray
-          </a>
-        </p>        
-      </div>
-    </div>
-</div>
-
-
-
   
-  
+   
   
 @endsection
