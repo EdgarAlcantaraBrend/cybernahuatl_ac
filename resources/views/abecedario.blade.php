@@ -8,7 +8,7 @@
             <button type="button" class="load">!Has click aqui!</button>
           </header>
           <br>
-          <ul class="deck preload" style="margin-left: 80px">
+          <ul class="deck preload" >
             <div class="row">
                 <div class="col-sm-3">
                     <!--------CARD DE GRAFIA A--->
