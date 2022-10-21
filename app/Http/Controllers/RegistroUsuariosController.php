@@ -26,7 +26,7 @@ class RegistroUsuariosController extends Controller
 
 
          $registroUsuario->save();
-         return redirect()->to('/welcome');
+         return redirect()->to('/welcome', compact('registroUsuario'));
 
 
     } 

@@ -8,6 +8,7 @@
       <form action="{{ route('auth.authenticate') }}" method="post">
         @csrf
         <div>
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <label>Email</label>
           <input type="email" name="email" id="email" class="text-input"  required  placeholder="name@example.com" autocomplete="off">
         </div>

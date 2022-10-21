@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Perfil extends Model
 {
-    use HasFactory;
+     //el nombre de la tabla 
+     protected $table='t_usuarios';
+     public $timestamps=false;
+
 }

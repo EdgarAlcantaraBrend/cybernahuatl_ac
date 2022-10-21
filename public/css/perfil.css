@@ -1,63 +1,77 @@
 
-.container{
-  margin: 0 auto;
-  display: table;
-}
-.left{
-  float: left;
-  width: 215px;
-  height: 400px;
-}
-.right{
-  float: right;
-  display: table;
-  width: 75%;
-}
-.fa{
-  display: inline-block;
-}
-.image{
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid gray;
-  display: inline-block;
-  padding: 3px;
-  border: 3px solid #d2d6de;
+
+.cabezera {
+  display: flex;
+  justify-content: space-betwenn;
   margin-top: 40px;
-  margin-right: 50px;
-  margin-left: 50px;
-
-}
-.usuername{
-    font-size: 21px;
-    margin-top: 5px;
-}
-.text-center {
-    text-align: center;
 }
 
-
-h5{
-    font-family: 'Alata', sans-serif;
+.perfil {
+  display: flex;
+  height: 200px;
+  width: 200px;
 }
 
-.left.box-primary {
-    border-top-color: #952f57;
-    
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 135px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: 100%;
+  max-height: 100%;
+  
 }
-.left {
-    position: relative;
-    border-radius: 3px;
-    background: #ffffff;
-    border-top: 6px solid #ffffff;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    padding: 10px;
+
+.titulo {
+  margin-left: 36px;
+  margin-top: 5%;
 }
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 10px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.jumpotron {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  background:#ccc;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 32px;
+  margin-top: 3%;
+}
+
+.jumpotron-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
+
 

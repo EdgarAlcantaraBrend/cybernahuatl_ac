@@ -1,6 +1,13 @@
+
+
 body {
  
   font-family: 'Alata', sans-serif;
+}
+hr {
+  height: 1px;
+  background-color: white;
+  border: none;
 }
 
 a:hover,
@@ -80,6 +87,8 @@ a:focus {
     width: 100%;
     position: absolute;
     z-index: 2;
+    
+   
 }
 #wrapper.toggled #navbar-wrapper {
     position: absolute;

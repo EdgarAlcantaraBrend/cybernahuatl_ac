@@ -1,63 +1,61 @@
 main{
-    padding: 4%;
+    padding: 1%;
     display: flex;
     justify-content: center;
   }
 
   .section-data{
-    width:40%;
+    width:90%;
       max-width:650px;
         display:fit-content ;
   
   }
-  
+  /*modificar las cards de la derechas*/
   .cards-wrapper{
-    max-width: 800px;
+    max-width: 950px;
   }
   .section-title{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 750;
     line-height: 130%;
     margin-bottom: 2rem;
   }
   .section-description{
-    font-size: 1.3rem;
-    width: 80%;
-    line-height: 140%;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    width: 90%;
+    line-height: 150%;
+    margin-bottom: 3rem;
+
+
   }
   .btn{
-    padding: .6rem 2rem;
-    font-size: 1.2rem;
-    border: 1px solid orangered;
-    color: orangered;
-    border-radius: 40px;
+    transition: all .12s ease-in-out;
+    transition-delay: .1s;
+    border-radius: .2em;
+    color: #000;
+
   }
-  .btn:hover{
-    background-color: orangered;
-    color: white;
-  }
+  
   .cards-wrapper{
-    width: 60%;
+    width: 250%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  
     row-gap: 2.5rem;
     border: none;
   }
   .card{
     border: none;
-    width: 360px;
-    height: 220px;
     display:flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.9rem;
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.12);
     position: relative;
     z-index: 1;
     overflow: hidden;
+    width:90%;
+    height:auto;
   
   }
   .card--data, .card-img-wrapper {
