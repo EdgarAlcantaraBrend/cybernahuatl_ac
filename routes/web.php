@@ -23,6 +23,7 @@ Route::get('/', [App\Http\Controllers\Inicio::class, 'index'])->name('index');
 //dentro del sistema
 Route::get('/welcome', [App\Http\Controllers\Inicio::class, 'welcome'])->name('welcome');
 Route::get('/abecedario', [App\Http\Controllers\Inicio::class, 'abecedario'])->name('abecedario');
+Route::get('/cuerpo', [App\Http\Controllers\Inicio::class, 'cuerpo'])->name('cuerpo');
 Route::get('/diccionario', [App\Http\Controllers\Inicio::class, 'diccionario'])->name('diccionario');
 Route::get('/cursos', [App\Http\Controllers\Inicio::class, 'cursos'])->name('cursos');
 Route::get('/profesores', [App\Http\Controllers\Inicio::class, 'profesores'])->name('profesores');

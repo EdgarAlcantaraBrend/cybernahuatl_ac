@@ -1,7 +1,8 @@
 @extends('layouts.plantilla2')
 
 @section('content')
-<p class="text-center"><h1 class="text-center">Diccionario Nahualt</h1></p>
+<h2>DICCIONARIO NAHUATL</h2>
+<p></p>
 <table id="table_id" class="display" class="table table-striped table-bordered" cellspacing="0" width="100%">
     <thead>
         <tr>

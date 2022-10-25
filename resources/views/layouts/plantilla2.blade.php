@@ -20,7 +20,7 @@
     <link href="{{asset('css/curso.css') }}" rel="stylesheet">
     <link href="{{asset('css/perfil.css') }}" rel="stylesheet">
     <link href="{{asset('css/profesores.css') }}" rel="stylesheet">
-    <link href="{{asset('css/modal.css') }}" rel="stylesheet">
+    <link href="{{asset('css/cuerpo.css') }}" rel="stylesheet">
   </head>
   <body>
     
@@ -60,7 +60,7 @@
                 <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
                 <div class="col"><a href="{{ route('abecedario')}}">Alfabeto</a></div>
                 <div class="col"><a href="">Numeraciòn</a></div>
-                <div class="col"><a href="">Cuerpo</a></div>
+                <div class="col"><a href="{{ route('cuerpo')}}">Cuerpo</a></div>
             </div>
           </div>
         </nav>

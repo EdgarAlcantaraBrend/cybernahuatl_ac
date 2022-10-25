@@ -20,9 +20,6 @@ function move(card, index) {
     }, 100 * cards.length);
     
   }
-  function mostrar(){
-
-    alert('Has click sobre una letra');
-  }
+  
   
   document.querySelector('.load').addEventListener('click', load);
