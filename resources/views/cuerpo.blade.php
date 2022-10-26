@@ -30,7 +30,7 @@
                                 <th scope="col text-center">Escritura</th>
                                 <th scope="col text-center">Significado</th>
                                 <th scope="col text-center">Pronunciación</th>
-                                
+                                <th scope="col text-center">Imagen</th>
                             </tr>
                         </thead>
                         <tbody>
