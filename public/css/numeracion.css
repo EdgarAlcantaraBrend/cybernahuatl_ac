@@ -1,0 +1,18 @@
+.svg:after{
+    content: attr(data-count);
+    text-align:center;
+    font-size:30px;
+    line-height:100px;
+    display: block;
+    height: 110px;
+    width: 110px;
+    font-weight: bold;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjgwLjgzM3B4IiBoZWlnaHQ9IjgwcHgiIHZpZXdCb3g9IjAgMCA4MC44MzMgODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDgwLjgzMyA4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGMDAwMDsiIGN4PSI0MCIgY3k9IjQwIiByPSIzOCIvPjwvc3ZnPg==);
+    float: left;
+    color: #fff;
+    font-family: "Titillium Web", sans-serif;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 8px;
+  }
+

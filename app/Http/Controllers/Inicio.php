@@ -19,6 +19,9 @@ class Inicio extends Controller
   public function abecedario(){
     return view('abecedario');  
   }
+  public function numeracion(){
+    return view('numeracion');  
+  }
   public function cuerpo(){
     return view('cuerpo');  
   }

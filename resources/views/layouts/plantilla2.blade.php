@@ -15,12 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">  
-    <link href="{{asset('css/carrucelAlfabeto.css') }}" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <link href="{{asset('css/curso.css') }}" rel="stylesheet">
+    <link href="{{asset('css/carrucelAlfabeto.css') }}" rel="stylesheet">
     <link href="{{asset('css/perfil.css') }}" rel="stylesheet">
     <link href="{{asset('css/profesores.css') }}" rel="stylesheet">
     <link href="{{asset('css/cuerpo.css') }}" rel="stylesheet">
+    <link href="{{asset('css/numeracion.css') }}" rel="stylesheet">
   </head>
   <body>
     
@@ -59,7 +61,7 @@
               <div class="row">
                 <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
                 <div class="col"><a href="{{ route('abecedario')}}">Alfabeto</a></div>
-                <div class="col"><a href="">Numeraciòn</a></div>
+                <div class="col"><a href="{{ route('numeracion')}}">Numeraciòn</a></div>
                 <div class="col"><a href="{{ route('cuerpo')}}">Cuerpo</a></div>
             </div>
           </div>
@@ -93,5 +95,6 @@
     <script src="{{ asset('js/carrucelAlfabeto.js') }}"></script>
     <script src="{{ asset('js/diccionario.js') }}"></script>
     <script src="{{ asset('js/perfil.js') }}"></script>
+    <script src="{{ asset('js/numeracion.js') }}"></script>
   </body>
 </html>

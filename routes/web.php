@@ -25,6 +25,7 @@ Route::get('/welcome', [App\Http\Controllers\Inicio::class, 'welcome'])->name('w
 Route::get('/abecedario', [App\Http\Controllers\Inicio::class, 'abecedario'])->name('abecedario');
 Route::get('/cuerpo', [App\Http\Controllers\Inicio::class, 'cuerpo'])->name('cuerpo');
 Route::get('/diccionario', [App\Http\Controllers\Inicio::class, 'diccionario'])->name('diccionario');
+Route::get('/numeracion', [App\Http\Controllers\Inicio::class, 'numeracion'])->name('numeracion');
 Route::get('/cursos', [App\Http\Controllers\Inicio::class, 'cursos'])->name('cursos');
 Route::get('/profesores', [App\Http\Controllers\Inicio::class, 'profesores'])->name('profesores');
 
