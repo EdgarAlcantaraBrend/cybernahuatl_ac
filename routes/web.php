@@ -29,6 +29,8 @@ Route::get('/numeracion', [App\Http\Controllers\Inicio::class, 'numeracion'])->n
 Route::get('/cursos', [App\Http\Controllers\Inicio::class, 'cursos'])->name('cursos');
 Route::get('/profesores', [App\Http\Controllers\Inicio::class, 'profesores'])->name('profesores');
 
+Route::get('/grafias.letraA', [App\Http\Controllers\Inicio::class, 'modalAlfabeto'])->name('modalAlfabeto');
+
 Route::get('/perfil' , [App\Http\Controllers\PerfilController::class, 'show'])->name('perfil');
 //Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
 

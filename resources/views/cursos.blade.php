@@ -15,7 +15,7 @@
       <div class="card">
         <div class="card--data">
           <h3 class="card--title">Diseno de interiores</h3>
-          <a href=""><button type="button" name="" id="" class="btn btn-outline-dark" ><i class="fa fa-arrow-right" aria-hidden="true"></i> Empezar</button></a>
+          <a href=""><button class="btn" name="" id="" class="btn btn-outline-dark" ><i class="fa fa-arrow-right" aria-hidden="true"></i> Empezar</button></a>
           
         </div>
         <div class="card-img-wrapper">

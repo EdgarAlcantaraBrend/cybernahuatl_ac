@@ -36,7 +36,7 @@
   font-size: 24px;
 }
 
-.tema button {
+.tema .btnPerfil {
   align-self: flex-end;
   font-weight: 400;
   font-size: 17px;
@@ -68,7 +68,7 @@
   color: #ffffff;
 }
 
-.dark .tema button {
+.dark .tema .btnPerfil {
   background: #1c1c1c;
   color: #ffffff;
   border: 2px solid #f7f7f7;

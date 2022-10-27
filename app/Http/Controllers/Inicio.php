@@ -34,5 +34,8 @@ class Inicio extends Controller
   public function profesores(){
     return view('profesores');  
   }
+  public function modalAlfabeto(){
+    return view('/grafias.letraA');  
+  }
   
 }
