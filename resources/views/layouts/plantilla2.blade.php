@@ -23,6 +23,7 @@
     <link href="{{asset('css/profesores.css') }}" rel="stylesheet">
     <link href="{{asset('css/cuerpo.css') }}" rel="stylesheet">
     <link href="{{asset('css/numeracion.css') }}" rel="stylesheet">
+    <link href="{{asset('css/diccionario.css') }}" rel="stylesheet">
   </head>
   <body>
     
