@@ -17,7 +17,7 @@
 
   <div class="col"></div>
   <div class="tema">
-    <button onclick="mudaTema()">Alterar Tema</button>
+    <button class="btnPerfil" onclick="mudaTema()">Alterar Tema</button>
   </div>
 </header>
 
