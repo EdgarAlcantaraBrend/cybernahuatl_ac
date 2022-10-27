@@ -49,7 +49,7 @@
         
       </div>
     
-      <div class="cards" id="cards-1" style="width: 60%">
+      <div class="cards" id="cards-1" style="width: 70%">
         <div class="row" >
           <div id="card-1" class="card red">
               <h2>1</h2>
